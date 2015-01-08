@@ -29,6 +29,7 @@ $(document).ready(function(){
                 a.removeClass("active").prev().addClass("active");
                 scrollToActive();
             }
+            if(!r.children(".active").length) r.children().first().addClass("active");
             ev.preventDefault();
         }else if(ev.keyCode == 40){
             var a = r.children(".active");
@@ -36,6 +37,7 @@ $(document).ready(function(){
                 a.removeClass("active").next().addClass("active");
                 scrollToActive();
             }
+            if(!r.children(".active").length) r.children().first().addClass("active");
             ev.preventDefault();
         }else if(ev.keyCode == 46){
             var a = r.children(".active");
