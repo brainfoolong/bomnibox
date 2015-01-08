@@ -47,13 +47,13 @@ var onSearch = function(text, suggest){
     // generate suggestions array
     var suggestions = [];
     found.forEach(function(item){
-        var u = escapeUrl(item.url);
-        var uDesc = u;
+        var uDesc = item.url;
         sRegex.forEach(function(val){
-            uDesc = uDesc.replace(val.regex, '<match>'+val.val+'</match>');
+            uDesc = uDesc.replace(val.regex, '{match}'+val.val+'{/match}');
         });
+        uDesc = escapeUrl(uDesc).replace(/{match}/ig, "<match>").replace(/{\/match}/ig, "</match>");
         suggestions.push({
-            "content" : u,
+            "content" : escapeUrl(item.url),
             "description" : '<url>'+uDesc+'</url> :: <dim>'+item.visitCount+' '+chrome.i18n.getMessage("visits")+'</dim> '+(item.title && item.title.length ? " :: "+escapeUrl(item.title) : "")
         });
     });
