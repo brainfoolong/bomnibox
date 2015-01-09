@@ -1,5 +1,5 @@
 {
-    "extDesc" : {"message" : "Optimalizované prohledávání historie adresního řádku - podobně jako rychlé prohledávání historie ve FireFoxu. Napište znak $ a mezeru nebo tabulátor pro aktivaci v adresním řádku."},
+    "extDesc" : {"message" : "Optimalizované prohledávání historie adresního řádku - podobně jako rychlé prohledávání historie ve FireFoxu."},
     "searchInput" : {"message" : "Prohledávat historii"},
     "omniboxDefault" : {"message" : "Použíjte CTRL+SHIFT+0 pro otevření rychlého hledání historie bez adresního řádku"},
     "help_1" : {"message" : "Jak to funguje"},

@@ -1,5 +1,5 @@
 {
-    "extDesc" : {"message" : "Ottimizza la ricerca nella cronologia dell'omnibox - Come la ricerca rapida nella cronologia di firefox. Premi $ e tab/spazio per abilitarla nell'omnibox."},
+    "extDesc" : {"message" : "Ottimizza la ricerca nella cronologia dell'omnibox - Come la ricerca rapida nella cronologia di firefox."},
     "searchInput" : {"message" : "Cerca nella cronologia"},
     "omniboxDefault" : {"message" : "Premi CTRL+MAIUSC+0 per aprire una ricerca rapida nella cronoloagia senza omnibox"},
     "help_1" : {"message" : "Come funziona"},

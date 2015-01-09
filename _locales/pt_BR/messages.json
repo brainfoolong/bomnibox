@@ -1,5 +1,5 @@
 {
-    "extDesc" : {"message" : "Histórico otimizado - como a busca rápida fdo Firefox. Digite $ e tab/space para habilitar na omnibox."},
+    "extDesc" : {"message" : "Histórico otimizado - como a busca rápida fdo Firefox."},
     "searchInput" : {"message" : "Buscar no histórico"},
     "omniboxDefault" : {"message" : "Use CTRL+SHIFT+0 para abrir um rápido histórico sem a omnibox"},
     "help_1" : {"message" : "Como isto funciona"},

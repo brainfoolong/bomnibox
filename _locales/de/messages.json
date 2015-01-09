@@ -1,5 +1,5 @@
 {
-    "extDesc" : {"message" : "Optimierte Omnibox Verlauf Suche - Wie in Firefox Schnellsuche. Zum aktivieren gib $ und Tab/Leertaste in der Omnibox ein."},
+    "extDesc" : {"message" : "Optimierte Omnibox Verlauf Suche - Wie in Firefox Schnellsuche."},
     "searchInput" : {"message" : "Suche in Verlauf"},
     "omniboxDefault" : {"message" : "Benutze STRG+SHIFT+0 um die Schnellsuche zu öffnen ohne die Omnibox zu benötigen"},
     "help_1" : {"message" : "Wie funktioniert es"},

@@ -1,5 +1,5 @@
 {
-    "extDesc" : {"message" : "Optimized fuzzy omnibox history search - Like firefox quick history search. Type $ and tab/space to enable it in the omnibox."},
+    "extDesc" : {"message" : "Optimized fuzzy omnibox history search - Like firefox quick history search."},
     "searchInput" : {"message" : "Search in history"},
     "omniboxDefault" : {"message" : "Use CTRL+SHIFT+0 to open quick history search without the omnibox"},
     "help_1" : {"message" : "How it works"},
