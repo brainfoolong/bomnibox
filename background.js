@@ -26,10 +26,13 @@ var onSearch = function(text, suggest){
     itemsCache.forEach(function(item){
         var ok = true;
         sRegex.forEach(function(val){
-            if(item.url.match(/^chrome/) || !item.url.match(val.regex)){
+            var matchUrlOrTitle = item.url.match(val.regex) || item.title.match(val.regex);
+
+            if(item.url.match(/^chrome/) || !matchUrlOrTitle){
                 ok = false;
                 return false;
             }
+
         });
         if(ok) found.push(item);
     });
@@ -48,13 +51,17 @@ var onSearch = function(text, suggest){
     var suggestions = [];
     found.forEach(function(item){
         var uDesc = item.url;
+        var highlightedTitle = item.title;
         sRegex.forEach(function(val){
             uDesc = uDesc.replace(val.regex, '{match}'+val.val+'{/match}');
+            highlightedTitle = highlightedTitle.replace(val.regex, '{match}'+val.val+'{/match}');
         });
         uDesc = escapeUrl(uDesc).replace(/{match}/ig, "<match>").replace(/{\/match}/ig, "</match>");
+        highlightedTitle = escapeUrl(highlightedTitle).replace(/{match}/ig, "<match>").replace(/{\/match}/ig, "</match>");
+
         suggestions.push({
             "content" : escapeUrl(item.url),
-            "description" : '<url>'+uDesc+'</url> :: <dim>'+item.visitCount+' '+chrome.i18n.getMessage("visits")+'</dim> '+(item.title && item.title.length ? " :: "+escapeUrl(item.title) : "")
+            "description" : '<url>'+uDesc+'</url> :: <dim>'+item.visitCount+' '+chrome.i18n.getMessage("visits")+'</dim> '+highlightedTitle
         });
     });
 
