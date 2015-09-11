@@ -6,5 +6,6 @@
     "help_2" : {"message" : "Most visited entries are on top. Type in what you know from an url, seperate multiple words by space to specify the search even more.\nExample: %s find all urls that contains %s and %s."},
     "help_3" : {"message" : "Quick delete entries"},
     "help_4" : {"message" : "DEL Key will remove the current highlighted entry from your history"},
-    "visits" : {"message" : "Visits"}
+    "visits" : {"message" : "Visits"},
+    "option_titlesearch" : {"message" : "Search also in site title"}
 }

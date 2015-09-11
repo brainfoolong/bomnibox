@@ -3,6 +3,8 @@
 * Background JS
 */
 
+var optionTitleSearch = false;
+
 // escape string for omnibox use
 var escapeUrl = function(url){
     return url.replace(/\&/g, "&amp;").replace(/\"/g, "&quot;").replace(/\'/g, "&apos;").replace(/\</g, "&lt;").replace(/\>/g, "&gt;")
@@ -24,15 +26,13 @@ var onSearch = function(text, suggest){
 
     // go through each item and do the search thingy
     itemsCache.forEach(function(item){
+        // not search in chrome url
+        if(item.url.match(/^chrome/)) return true;
         var ok = true;
         sRegex.forEach(function(val){
-            var matchUrlOrTitle = item.url.match(val.regex) || item.title.match(val.regex);
-
-            if(item.url.match(/^chrome/) || !matchUrlOrTitle){
-                ok = false;
-                return false;
-            }
-
+            if(optionTitleSearch && !(item.title.match(val.regex) || item.url.match(val.regex))) ok = false;
+            else if(!optionTitleSearch && !item.url.match(val.regex)) ok = false;
+            if(!ok) return false;
         });
         if(ok) found.push(item);
     });
@@ -54,10 +54,10 @@ var onSearch = function(text, suggest){
         var highlightedTitle = item.title;
         sRegex.forEach(function(val){
             uDesc = uDesc.replace(val.regex, '{match}'+val.val+'{/match}');
-            highlightedTitle = highlightedTitle.replace(val.regex, '{match}'+val.val+'{/match}');
+            if(optionTitleSearch) highlightedTitle = highlightedTitle.replace(val.regex, '{match}'+val.val+'{/match}');
         });
         uDesc = escapeUrl(uDesc).replace(/{match}/ig, "<match>").replace(/{\/match}/ig, "</match>");
-        highlightedTitle = escapeUrl(highlightedTitle).replace(/{match}/ig, "<match>").replace(/{\/match}/ig, "</match>");
+        if(optionTitleSearch) highlightedTitle = escapeUrl(highlightedTitle).replace(/{match}/ig, "<match>").replace(/{\/match}/ig, "</match>");
 
         suggestions.push({
             "content" : escapeUrl(item.url),
@@ -92,16 +92,20 @@ chrome.omnibox.onInputChanged.addListener(onSearch);
 
 // on enter or select the current entry
 chrome.omnibox.onInputEntered.addListener(function(text, type){
-    chrome.tabs.getSelected(null, function(tab){
-        chrome.tabs.update(tab.id, {url : text}, function(){
-
+    console.log(type);
+    if(type == "newForegroundTab"){
+        chrome.tabs.create({url : text, active : type == "newForegroundTab"});
+    }else{
+        chrome.tabs.query({lastFocusedWindow : true, windowType : "normal"}, function(tab){
+            chrome.tabs.update(tab.id, {url : text}, function(){});
         });
-    });
+    }
 });
 
 // key shortcuts
-chrome.commands.onCommand.addListener(function(command) {
+chrome.commands.onCommand.addListener(function(command, disposition) {
     if(command == "open"){
+        console.log(disposition);
         var w = 600;
         var h = 400;
         var l = screen.width / 2 - w / 2;
@@ -133,3 +137,11 @@ chrome.extension.onConnect.addListener(function(port) {
     });
 });
 
+// interval for get options if they have changed
+setInterval(function(){
+    // get options
+    chrome.storage.sync.get(["optionTitleSearch"], function(data){
+        optionTitleSearch = false;
+        if(data && data.optionTitleSearch) optionTitleSearch = true;
+    });
+}, 1000);

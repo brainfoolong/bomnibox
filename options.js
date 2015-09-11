@@ -9,6 +9,17 @@ $(document).ready(function(){
     var s = $(".search");
     var r = $("#results");
 
+    // on change option
+    $("#titlesearch").on("change", function(){
+        chrome.storage.sync.set({
+            optionTitleSearch : $(this).prop("checked")
+        });
+    });
+    $("#titlesearch").next().text(chrome.i18n.getMessage("option_titlesearch"));
+    chrome.storage.sync.get("optionTitleSearch", function(data){
+        if(data && data.optionTitleSearch) $("#titlesearch").prop("checked", true);
+    });
+
     var scrollToActive = function(){
         var t = r.children(".active").offset().top - $(window).height() + 70;
         $(window).scrollTop(t);
@@ -52,7 +63,7 @@ $(document).ready(function(){
                     return;
                 }
                 port.postMessage({"action" : "search", "text" : v});
-            }, 100);
+                }, 100);
         }
     });
     r.on("click", "> div", function(ev){
@@ -77,8 +88,8 @@ $(document).ready(function(){
     });
     s.val(chrome.i18n.getMessage("searchInput")).focus();
     $("#help")
-        .append($("<h3>").text(chrome.i18n.getMessage("help_1")))
-        .append($("<p>").html(chrome.i18n.getMessage("help_2").replace(/\%s/, "<b>local phpmy</b>").replace(/\%s/, "<b>local</b>").replace(/\%s/, "<b>phpmy</b>").replace(/\n/ig, "<br/>")))
-        .append($("<h3>").text(chrome.i18n.getMessage("help_3")))
-        .append($("<p>").text(chrome.i18n.getMessage("help_4")))
+    .append($("<h3>").text(chrome.i18n.getMessage("help_1")))
+    .append($("<p>").html(chrome.i18n.getMessage("help_2").replace(/\%s/, "<b>local phpmy</b>").replace(/\%s/, "<b>local</b>").replace(/\%s/, "<b>phpmy</b>").replace(/\n/ig, "<br/>")))
+    .append($("<h3>").text(chrome.i18n.getMessage("help_3")))
+    .append($("<p>").text(chrome.i18n.getMessage("help_4")))
 });

@@ -8,6 +8,7 @@
     "minimum_chrome_version" : "20.0",
     "author": "BrainFooLong",
     "default_locale" : "en",
+    "options_page": "options.html",
     "icons": {
         "16": "img/icon-16.png",
         "48": "img/icon-48.png",
@@ -20,7 +21,8 @@
     },
     "permissions": [
         "history",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "commands": {
         "open": {

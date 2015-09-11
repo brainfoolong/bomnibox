@@ -6,5 +6,6 @@
     "help_2" : {"message" : "Tie meist besuchten Einträge sind ganz oben. Gib ein was du von einer URL noch weißt, mehrere Wörter trennst du mit einem Leerzeichen. Beispiel: %s findet alle URL's die %s und %s beinhalten."},
     "help_3" : {"message" : "Einträge schnell löschen"},
     "help_4" : {"message" : "Die ENTF Taste löscht den gerade hervorgehobenen Eintrag"},
-    "visits" : {"message" : "Besuche"}
+    "visits" : {"message" : "Besuche"},
+    "option_titlesearch" : {"message" : "Auch in Seitentitel suchen"}
 }
