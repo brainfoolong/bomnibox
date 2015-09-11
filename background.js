@@ -92,7 +92,7 @@ chrome.omnibox.onInputChanged.addListener(onSearch);
 
 // on enter or select the current entry
 chrome.omnibox.onInputEntered.addListener(function(text, type){
-    if(type == "newForegroundTab"){
+    if(type != "currentTab"){
         chrome.tabs.create({url : text, active : type == "newForegroundTab"});
     }else{
         chrome.tabs.query({lastFocusedWindow : true, windowType : "normal"}, function(tab){
