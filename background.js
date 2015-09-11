@@ -92,7 +92,6 @@ chrome.omnibox.onInputChanged.addListener(onSearch);
 
 // on enter or select the current entry
 chrome.omnibox.onInputEntered.addListener(function(text, type){
-    console.log(type);
     if(type == "newForegroundTab"){
         chrome.tabs.create({url : text, active : type == "newForegroundTab"});
     }else{
@@ -103,9 +102,8 @@ chrome.omnibox.onInputEntered.addListener(function(text, type){
 });
 
 // key shortcuts
-chrome.commands.onCommand.addListener(function(command, disposition) {
+chrome.commands.onCommand.addListener(function(command) {
     if(command == "open"){
-        console.log(disposition);
         var w = 600;
         var h = 400;
         var l = screen.width / 2 - w / 2;
