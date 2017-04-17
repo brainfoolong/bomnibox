@@ -14,7 +14,7 @@
         "48": "img/icon-48.png",
         "128": "img/icon-128.png"
     },
-    "omnibox": { "keyword" : "$" },
+    "omnibox": { "keyword" : "b" },
     "background": {
         "scripts": ["background.js"],
         "persistent": false
