@@ -17,6 +17,10 @@ var unescapeUrl = function(url){
 
 // on do search - when user typed in the omnibox
 var onSearch = function(text, suggest){
+    chrome.storage.sync.get(["optionTitleSearch"], function(data){
+        optionTitleSearch = false;
+        if(data && data.optionTitleSearch) optionTitleSearch = true;
+    });
     var found = [];
     var s = text.trim().split(" ");
     var sRegex = s;
