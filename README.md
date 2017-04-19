@@ -5,6 +5,9 @@ Optimized fuzzy omnibox history search for chrome - Like firefox quick history s
 ## Download at Google Webstore
 https://chrome.google.com/webstore/detail/bomnibox-better-omnibox/addhjliabodfedbldldgckekdeplehai
 
+## Code languages and standards we use
+* JS: https://standardjs.com
+
 ## Screenshots
 `Omnibox`
 [![omnibox](https://github.com/brainfoolong/bomnibox/raw/misc/images/omnibox.png)](#omnibox)

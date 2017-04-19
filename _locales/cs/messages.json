@@ -1,10 +1,26 @@
 {
-    "extDesc" : {"message" : "Optimalizované prohledávání historie adresního řádku - podobně jako rychlé prohledávání historie ve FireFoxu."},
-    "searchInput" : {"message" : "Prohledávat historii"},
-    "omniboxDefault" : {"message" : "Použíjte CTRL+SHIFT+0 pro otevření rychlého hledání historie bez adresního řádku"},
-    "help_1" : {"message" : "Jak to funguje"},
-    "help_2" : {"message" : "Nejnavštěvovanější položky jsou nahoře. Napište co znáte z url, oddělte slova mezerami pro specifičtější hledání.\nPříklad: %s vyhledá všechna url, která obsahují %s a %s."},
-    "help_3" : {"message" : "Rychlé mazání položek"},
-    "help_4" : {"message" : "Tlačítko DEL smaže právě vybranou položku z vaší historie"},
-    "visits" : {"message" : "Návštěvy"}
+  "extDesc": {
+    "message": "Optimalizované prohledávání historie adresního řádku - podobně jako rychlé prohledávání historie ve FireFoxu."
+  },
+  "searchInput": {
+    "message": "Prohledávat historii"
+  },
+  "omniboxDefault": {
+    "message": "Použíjte CTRL+SHIFT+0 pro otevření rychlého hledání historie bez adresního řádku"
+  },
+  "help_1": {
+    "message": "Jak to funguje"
+  },
+  "help_2": {
+    "message": "Nejnavštěvovanější položky jsou nahoře. Napište co znáte z url, oddělte slova mezerami pro specifičtější hledání.\nPříklad: %s vyhledá všechna url, která obsahují %s a %s."
+  },
+  "help_3": {
+    "message": "Rychlé mazání položek"
+  },
+  "help_4": {
+    "message": "Tlačítko DEL smaže právě vybranou položku z vaší historie"
+  },
+  "visits": {
+    "message": "Návštěvy"
+  }
 }

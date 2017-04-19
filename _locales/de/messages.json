@@ -1,11 +1,29 @@
 {
-    "extDesc" : {"message" : "Optimierte Omnibox Verlauf Suche - Wie in Firefox Schnellsuche."},
-    "searchInput" : {"message" : "Suche in Verlauf"},
-    "omniboxDefault" : {"message" : "Benutze STRG+SHIFT+0 um die Schnellsuche zu öffnen ohne die Omnibox zu benötigen"},
-    "help_1" : {"message" : "Wie funktioniert es"},
-    "help_2" : {"message" : "Die meist besuchten Einträge sind ganz oben. Gib ein was du von einer URL noch weißt, mehrere Wörter trennst du mit einem Leerzeichen. Beispiel: %s findet alle URL's die %s und %s beinhalten."},
-    "help_3" : {"message" : "Einträge schnell löschen"},
-    "help_4" : {"message" : "Die ENTF Taste löscht den gerade hervorgehobenen Eintrag"},
-    "visits" : {"message" : "Besuche"},
-    "option_titlesearch" : {"message" : "Auch in Seitentitel suchen"}
+  "extDesc": {
+    "message": "Optimierte Omnibox Verlauf Suche - Wie in Firefox Schnellsuche."
+  },
+  "searchInput": {
+    "message": "Suche in Verlauf"
+  },
+  "omniboxDefault": {
+    "message": "Benutze STRG+SHIFT+0 um die Schnellsuche zu öffnen ohne die Omnibox zu benötigen"
+  },
+  "help_1": {
+    "message": "Wie funktioniert es"
+  },
+  "help_2": {
+    "message": "Die meist besuchten Einträge sind ganz oben. Gib ein was du von einer URL noch weißt, mehrere Wörter trennst du mit einem Leerzeichen. Beispiel: %s findet alle URL's die %s und %s beinhalten."
+  },
+  "help_3": {
+    "message": "Einträge schnell löschen"
+  },
+  "help_4": {
+    "message": "Die ENTF Taste löscht den gerade hervorgehobenen Eintrag"
+  },
+  "visits": {
+    "message": "Besuche"
+  },
+  "option_titlesearch": {
+    "message": "Auch in Seitentitel suchen"
+  }
 }

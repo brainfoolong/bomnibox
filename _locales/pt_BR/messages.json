@@ -1,10 +1,26 @@
 {
-    "extDesc" : {"message" : "Histórico otimizado - como a busca rápida do Firefox."},
-    "searchInput" : {"message" : "Buscar no histórico"},
-    "omniboxDefault" : {"message" : "Use CTRL+SHIFT+0 para abrir um rápido histórico sem a omnibox"},
-    "help_1" : {"message" : "Como isto funciona"},
-    "help_2" : {"message" : "Mais visitados estão no topo. Digite o que você sabe de uma url - várias palavras separadas por espaço para especificar a busca ainda mais.\nExample: %s buscar todas as urls que contêm %s e %s."},
-    "help_3" : {"message" : "Excluir entradas rápidas"},
-    "help_4" : {"message" : "A tecla DEL irá remover a entrada em destaque do histórico atual"},
-    "visits" : {"message" : "Visitas"}
+  "extDesc": {
+    "message": "Histórico otimizado - como a busca rápida do Firefox."
+  },
+  "searchInput": {
+    "message": "Buscar no histórico"
+  },
+  "omniboxDefault": {
+    "message": "Use CTRL+SHIFT+0 para abrir um rápido histórico sem a omnibox"
+  },
+  "help_1": {
+    "message": "Como isto funciona"
+  },
+  "help_2": {
+    "message": "Mais visitados estão no topo. Digite o que você sabe de uma url - várias palavras separadas por espaço para especificar a busca ainda mais.\nExample: %s buscar todas as urls que contêm %s e %s."
+  },
+  "help_3": {
+    "message": "Excluir entradas rápidas"
+  },
+  "help_4": {
+    "message": "A tecla DEL irá remover a entrada em destaque do histórico atual"
+  },
+  "visits": {
+    "message": "Visitas"
+  }
 }

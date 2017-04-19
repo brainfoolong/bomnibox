@@ -1,10 +1,26 @@
 {
-    "extDesc" : {"message" : "Ottimizza la ricerca nella cronologia dell'omnibox - Come la ricerca rapida nella cronologia di firefox."},
-    "searchInput" : {"message" : "Cerca nella cronologia"},
-    "omniboxDefault" : {"message" : "Premi CTRL+MAIUSC+0 per aprire una ricerca rapida nella cronoloagia senza omnibox"},
-    "help_1" : {"message" : "Come funziona"},
-    "help_2" : {"message" : "Le voci più visitate sono in cima. Scrivi ciò che sai di un url, separa parole multiple con degli spazi per rendere la ricerca più specifica.\nEsempio: %s trova tutti gli url che contengono %s e %s."},
-    "help_3" : {"message" : "Eliminazione rapida voci"},
-    "help_4" : {"message" : "Il tasto CANC rimuoverà le voci attualmente selezionate dalla tua cronologia"},
-    "visits" : {"message" : "Visite"}
+  "extDesc": {
+    "message": "Ottimizza la ricerca nella cronologia dell'omnibox - Come la ricerca rapida nella cronologia di firefox."
+  },
+  "searchInput": {
+    "message": "Cerca nella cronologia"
+  },
+  "omniboxDefault": {
+    "message": "Premi CTRL+MAIUSC+0 per aprire una ricerca rapida nella cronoloagia senza omnibox"
+  },
+  "help_1": {
+    "message": "Come funziona"
+  },
+  "help_2": {
+    "message": "Le voci più visitate sono in cima. Scrivi ciò che sai di un url, separa parole multiple con degli spazi per rendere la ricerca più specifica.\nEsempio: %s trova tutti gli url che contengono %s e %s."
+  },
+  "help_3": {
+    "message": "Eliminazione rapida voci"
+  },
+  "help_4": {
+    "message": "Il tasto CANC rimuoverà le voci attualmente selezionate dalla tua cronologia"
+  },
+  "visits": {
+    "message": "Visite"
+  }
 }

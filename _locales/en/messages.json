@@ -1,11 +1,29 @@
 {
-    "extDesc" : {"message" : "Optimized fuzzy omnibox history search - Like firefox quick history search."},
-    "searchInput" : {"message" : "Search in history"},
-    "omniboxDefault" : {"message" : "Use CTRL+SHIFT+0 to open quick history search without the omnibox"},
-    "help_1" : {"message" : "How it works"},
-    "help_2" : {"message" : "Most visited entries are on top. Type in what you know from an url, seperate multiple words by space to specify the search even more.\nExample: %s find all urls that contains %s and %s."},
-    "help_3" : {"message" : "Quick delete entries"},
-    "help_4" : {"message" : "DEL Key will remove the current highlighted entry from your history"},
-    "visits" : {"message" : "Visits"},
-    "option_titlesearch" : {"message" : "Search also in site title"}
+  "extDesc": {
+    "message": "Optimized fuzzy omnibox history search - Like firefox quick history search."
+  },
+  "searchInput": {
+    "message": "Search in history"
+  },
+  "omniboxDefault": {
+    "message": "Use CTRL+SHIFT+0 to open quick history search without the omnibox"
+  },
+  "help_1": {
+    "message": "How it works"
+  },
+  "help_2": {
+    "message": "Most visited entries are on top. Type in what you know from an url, seperate multiple words by space to specify the search even more.\nExample: %s find all urls that contains %s and %s."
+  },
+  "help_3": {
+    "message": "Quick delete entries"
+  },
+  "help_4": {
+    "message": "DEL Key will remove the current highlighted entry from your history"
+  },
+  "visits": {
+    "message": "Visits"
+  },
+  "option_titlesearch": {
+    "message": "Search also in site title"
+  }
 }
