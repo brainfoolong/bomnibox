@@ -2,6 +2,9 @@
 # Bomnibox - Better Omnibox
 Optimized fuzzy omnibox history search for chrome - Like firefox quick history search 
 
+## Support me
+If you like to buy some coffee, i will appriciate it. You can do this on [Patreon](https://www.patreon.com/brainfoolong) or via [PayPal](https://www.paypal.me/brainfoolong)
+
 ## Download at Google Webstore
 https://chrome.google.com/webstore/detail/bomnibox-better-omnibox/addhjliabodfedbldldgckekdeplehai
 
