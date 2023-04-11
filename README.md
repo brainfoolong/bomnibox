@@ -1,4 +1,7 @@
 [![logo](https://github.com/brainfoolong/bomnibox/raw/master/img/icon-trans-300.png)](#logo)
+
+> Extension is not available anymore. A lot of time has passed by...
+
 # Bomnibox - Better Omnibox
 Optimized fuzzy omnibox history search for chrome - Like firefox quick history search 
 
